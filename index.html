@@ -1,0 +1,504 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mr Tony Website</title>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/imgLiquid.js"></script>
+<script src="assets/js/classie.js"></script>
+<script src="assets/js/jquery.fullPage.min.js"></script>
+<!--<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.css">-->
+<script src="assets/js/modernizr.custom.js"></script>
+<!--<link href="assets/css/modality.css" rel="stylesheet" type="text/css">-->
+<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class="cart-main">
+        <div class="cart-box clearfix" id="toggle_cart">
+      		<ul>
+            	<li>
+                	<div class="first-cross"><a href="javascript:void(0)"><img src="assets/images/cross.png"></a></div>
+                    <a href="javascript:void(0)">
+                    <div class="second-product">
+                    	<img src="assets/images/prod_black.png">
+                    </div>
+                    <div class="third-detail">
+                    	<span class="cart-pro-name">ut shaving foam</span>
+                        <span class="cart-pro-price">Rs 399</span>
+                    </div>
+                    </a>
+                </li>
+                <li>
+                	<div class="first-cross"><a href="javascript:void(0)"><img src="assets/images/cross.png"></a></div>
+                    <a href="javascript:void(0)">
+                    <div class="second-product">
+                    	<img src="assets/images/rajor_item_red.png">
+                    </div>
+                    <div class="third-detail">
+                    	<span class="cart-pro-name">shaving foam</span>
+                        <span class="cart-pro-price">Rs 399</span>
+                    </div>
+                    </a>
+                </li>
+            </ul>
+       	      <div class="cart-bottom clearfix">
+            	<a href="javascript:void(0)" class="cart-view">View cart</a>
+                <a href="javascript:void(0)" class="cart-check">Check out</a>
+            </div>
+        </div>
+        <a href="#" class="top-cart" id="click_cart">Shaviour Cart</a>
+    </div>
+    
+    <div class="chat-room">
+    	 <a href="#" class="top-chat" id="click_chat">Chatting room</a>
+         <div class="chat-heading" id="toggle_chat">
+         		<span>BONJOUR!<br/>
+HOW CAN I HELP YOU TODAY</span>
+				<textarea rows="6"></textarea>
+              <a href="javascript:void(0)" class="chat-view"> Send</a>
+         </div>
+    </div>
+    
+<div class="overlay overlay-hugeinc" id="product-details-popup">
+  <div class="popup_wrapper">
+    <div class="popup_area"> asdsasadssd </div>
+  </div>
+  <button type="button" class="overlay-close">Close</button>
+</div>
+
+<div class="sidebar-section">
+  <section id="section-logo"> <a title="UNCLE TONY | IT'S YOUR SHAVIOUR" href="#"> <img src="assets/images/uncle_tony.svg" alt="UNCLE TONY | IT'S YOUR SHAVIOUR" title="UNCLE TONY | IT'S YOUR SHAVIOUR" width="175" height="224"> </a> </section>
+  
+  <!----------- Menu Area------------------------->
+  
+  <section id="section-menu">
+    <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+      <ul>
+        <li><a href="#" title="HOME" class="home-menu active">HOME</a></li>
+        <li><a href="#about-pop" class="about-menu" title="ABOUT">ABOUT</a></li>
+        <li><a href="#" title="SHAVING" id="shaving-menu">SHAVING</a></li>
+        <li><a href="#get_shave-box" class="getShave-menu" title="GET SHAVED">GET SHAVED</a></li>
+        <li><a href="#contact" class="contact-menu" title="CONTACT">CONTACT</a></li>
+      </ul>
+      
+      <a href="javascript:void(0)" id="showLeft"><img src="assets/images/arrow_menu_slide.png" /></a> </nav>
+  </section>
+</div>
+<div id="fullpage" class="content clearfix">
+  <!----------- END Menu Area------------------------->
+  
+  <!----------- Homepage Background Area------------------------->
+  <section id="section-home" class="section">
+    <div class="wrapper_site">
+      <div class="banner_title">Welcome<br/>
+        to a whole new way<br/>
+        of shaving.</div>
+    </div>
+    <div class="imgLiquidFill imgLiquid full" > <img src="assets/images/homepage_banner.jpg" alt="homepage" class="image-abs"> </div>
+    <div class="arrow_down">
+      <button type="button" id="btn-next" class="btn i-down">
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" width="25" height="25" viewBox="0 0 16 10" enable-background="new 0 0 16 10" xml:space="preserve" style="fill: rgb(0, 0, 0);">
+        <polygon points="14 0 8 6 2 0 0 2 8 10 16 2 "></polygon>
+      </svg>
+      <span class="btn-bg"></span> <span class="btn-bg btn-bg-mask"></span> </button>
+    </div>
+  </section>
+  <!----------- End Homepage Background Area ------------------------->
+  
+  <!----------- Product  Area------------------------->
+  <section id="section-product-list" class="section">
+    <div class="wrapper_site">
+      <div class="product_list_section" id="scroll_section">
+        <ul>
+          <li>
+            <div class="btn_product"> <img src="assets/images/prod_black.png" alt="Razor">
+              <div class="ovrly"></div>
+              <div class="buttons">
+                <div class="fa">
+                  <div class="quick_view_link">
+                    <!--<button id="" type="button">QUICK VIEW</button>-->
+                    <a class="quickLink" href="#yourModalId" aria-label="open">Quick View</a> 
+                  </div>
+                  <div class="product-title">UT RAZOR BLACK</div>
+                  <div class="product-option">
+                    <ul>
+                      <li>
+                        <select id="black_select">
+                          <option selected="selected">CHOOSE ONE</option>
+                          <option>M</option>
+                          <option>S</option>
+                          <option>XL</option>
+                          <option>L</option>
+                        </select>
+                      </li>
+                      <li>
+                        <button class="add_to_cart"> ADD <span class="product-price">299</span></button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="btn_product"> <img src="assets/images/prod_red.png" alt="Razor">
+              <div class="ovrly"></div>
+              <div class="buttons">
+                <div class="fa">
+                  <div class="quick_view_link">
+                    <!--<button id="" type="button">QUICK VIEW</button>-->
+                    <a class="quickLink" href="#yourModalId" aria-label="open">Quick View</a> 
+                  </div>
+                  <div class="product-title">UT RAZOR BLACK</div>
+                  <div class="product-option">
+                    <ul>
+                      <li>
+                        <select id="black_select">
+                          <option selected="selected">CHOOSE ONE</option>
+                          <option>M</option>
+                          <option>S</option>
+                          <option>XL</option>
+                          <option>L</option>
+                        </select>
+                      </li>
+                      <li>
+                        <button class="add_to_cart"> ADD <span class="product-price">299</span></button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="btn_product"> <img src="assets/images/prod_blue.png" alt="Razor">
+              <div class="ovrly"></div>
+              <div class="buttons">
+                <div class="fa">
+                  <div class="quick_view_link">
+                   <!-- <button id="" type="button">QUICK VIEW</button>-->
+                    <a class="quickLink" href="#yourModalId" aria-label="open">Quick View</a> 
+                  </div>
+                  <div class="product-title">UT RAZOR BLACK</div>
+                  <div class="product-option">
+                    <ul>
+                      <li>
+                        <select id="black_select">
+                          <option selected="selected">CHOOSE ONE</option>
+                          <option>M</option>
+                          <option>S</option>
+                          <option>XL</option>
+                          <option>L</option>
+                        </select>
+                      </li>
+                      <li>
+                        <button class="add_to_cart"> ADD <span class="product-price">299</span></button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="no-margin-css">
+            <div class="btn_product"> <img src="assets/images/prod_yellow.png" alt="Razor">
+              <div class="ovrly"></div>
+              <div class="buttons">
+                <div class="fa">
+                  <div class="quick_view_link">
+                  <!--  <button id="" type="button">QUICK VIEW</button>-->
+                    <a class="quickLink" href="#yourModalId" aria-label="open">Quick View</a> 
+                  </div>
+                  <div class="product-title">UT RAZOR BLACK</div>
+                  <div class="product-option">
+                    <ul>
+                      <li>
+                        <select id="black_select">
+                          <option selected="selected">CHOOSE ONE</option>
+                          <option>M</option>
+                          <option>S</option>
+                          <option>XL</option>
+                          <option>L</option>
+                        </select>
+                      </li>
+                      <li>
+                        <button class="add_to_cart"> ADD <span class="product-price">299</span></button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="btn_product"> <img src="assets/images/shaving_form.png" alt="Razor">
+              <div class="ovrly"></div>
+              <div class="buttons">
+                <div class="fa">
+                  <div class="quick_view_link">
+                    <button id="" type="button">QUICK VIEW</button>
+                  </div>
+                  <div class="product-title">UT RAZOR BLACK</div>
+                  <div class="product-option">
+                    <ul>
+                      <li>
+                        <select id="black_select">
+                          <option selected="selected">CHOOSE ONE</option>
+                          <option>M</option>
+                          <option>S</option>
+                          <option>XL</option>
+                          <option>L</option>
+                        </select>
+                      </li>
+                      <li>
+                        <button class="add_to_cart"> ADD <span class="product-price">299</span></button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="btn_product"> <img src="assets/images/prod_black.png" alt="Razor">
+              <div class="ovrly"></div>
+              <div class="buttons">
+                <div class="fa">
+                  <div class="quick_view_link">
+                    <!--   <button id="trigger-overlay" href="#yourModalId" aria-label="open" type="button">QUICK VIEW</button>-->
+                    <a class="quickLink" href="#yourModalId" aria-label="open">Quick View</a> 
+                    </div>
+                  <div class="product-title">UT RAZOR BLACK</div>
+                  <div class="product-option">
+                    <ul>
+                      <li>
+                        <select id="black_select">
+                          <option selected="selected">CHOOSE ONE</option>
+                          <option>M</option>
+                          <option>S</option>
+                          <option>XL</option>
+                          <option>L</option>
+                        </select>
+                      </li>
+                      <li>
+                        <button class="add_to_cart"> ADD <span class="product-price">299</span></button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!----------- End Product Area ------------------------->
+
+  <!----------- About  Area------------------------->
+<div class="modality-modal slide-up mm-show" id="about-box">
+    <div class="mm-wrap">
+      <section id="about-pop" class="yourModalClass clearfix" style="">
+            <h3>About</h3>
+            <div class="content mCustomScrollbar">
+                    <img src="assets/images/about-logo.png" class="first_one">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+Ipsum has been the industry's standard dummy text ever since the 1500s, when
+an unknown printer took a galley of type and scrambled it to make a type specimen
+book. It has survived not only five centuries, but also the leap into electronic
+typesetting, remaining essentially unchanged. </p> 
+				
+				  <img src="assets/images/about-img.jpg" class="first_one">
+                  
+            </div>
+              <a href="#about-pop" class="close-Modality"></a>        </section>
+    </div>
+</div>
+  <!----------- End About Area ------------------------->
+
+  <!----------- Get shave  Area------------------------->
+<div class="modality-modal slide-up mm-show" id="about-box">
+    <div class="mm-wrap">
+      <section id="get_shave-box" class="yourModalClass clearfix" style="">
+            <h3>Get Shaved</h3>
+            <div class="content mCustomScrollbar">
+                    <img src="assets/images/get-shave.jpg">
+                     <img src="assets/images/get-shave.jpg">
+            </div>
+              <a href="#get_shave-box" class="close-Modality"></a>        </section>
+    </div>
+</div>
+  <!----------- End Get shave Area ------------------------->
+
+  <!----------- Contact  Area------------------------->
+<div class="modality-modal slide-up mm-show" id="about-box">
+    <div class="mm-wrap">
+      <section id="contact" class="yourModalClass clearfix" style="">
+            <h3>Contact</h3>
+            <div class="content mCustomScrollbar">
+                    <img src="assets/images/about-logo.png" class="first_one">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+Ipsum has been the industry's standard dummy text ever since the 1500s, when
+an unknown printer took a galley of type and scrambled it to make a type specimen
+book. It has survived not only five centuries, but also the leap into electronic
+typesetting, remaining essentially unchanged. </p> 
+				
+				  <img src="assets/images/about-img.jpg" class="first_one">
+                  
+            </div>
+              <a href="#contact" class="close-Modality"></a>        </section>
+    </div>
+</div>
+  <!----------- End Contact Area ------------------------->
+
+
+  <!----------- Pop up Quick view ------------------------->
+
+  <div class="modality-modal slide-up mm-show" id="quick-box">
+    <div class="mm-wrap">
+      <div id="yourModalId" class="yourModalClass clearfix" style="">
+      	<div class="quick-box60">
+        	<section class="home-slider">
+            <ul id="home-slider">
+              <li><img src="assets/images/rajor_item_red.png" /></li>
+               <li><img src="assets/images/prod_yellow.png" /></li>
+                <li><img src="assets/images/prod_blue.png" /></li>
+                  <li><img src="assets/images/prod_black.png" /></li>
+            </ul>
+        </section>
+        </div>
+        
+        <div  class="quick-box40">
+        	<h4>Rajor Black</h4>
+            <a href="javascript.void(0)" class="add-btn">ADD <span class="rupeeSpan">199</span></a>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dodolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est </p>
+            <a href="javascript.void(0)" class="go-btn">Go to product</a>
+        </div>
+        
+      <a href="#yourModalId" class="close-Modality"></a> 
+      </div>
+    </div>
+  </div>
+  
+  <script src="assets/js/modality.jquery.js"></script>
+  <script src="assets/js/jquery.bxslider.js"></script>
+  <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script  type="text/javascript">
+	$(document).ready(function () {
+			$(".imgLiquidFill").imgLiquid({fill:true});
+	});
+	
+	var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+	showLeft = document.getElementById( 'showLeft' ),
+	body = document.body;
+	
+	showLeft.onclick = function() {
+				classie.toggle( this, 'active' );
+				classie.toggle( menuLeft, 'cbp-spmenu-close' );
+				classie.toggle( showLeft, 'cbp-closeicon' );
+				
+	};
+	
+	$(document).ready(function() {
+			$('#fullpage').fullpage({
+				fitToSection:false,scrollingSpeed: 500, autoScrolling: false,	resize: false,
+					animateAnchor:false,
+					
+					fitSection: false,
+					css3: true,  scrollBar: false,easing: 'easeInOutCubic',
+        easingcss3: 'ease'
+
+			});
+			
+			$('#btn-next').click(function(e){
+				e.preventDefault();
+				$.fn.fullpage.moveSectionDown();
+			});
+			$('#shaving-menu').click(function(e){
+				e.preventDefault();
+				$.fn.fullpage.moveSectionDown();
+			});
+	});
+	
+	$(document).ready(function () {
+	
+		// Chatting room JS
+		$('#click_chat').on('click', function(){
+			$("#toggle_chat").slideToggle('slow');
+			$("#click_chat").toggleClass('active');
+		});
+		
+		// Cart box JS
+		$('#click_cart').on('click', function(){
+			$("#toggle_cart").slideToggle('slow');
+			$("#click_cart").toggleClass('active');
+		});
+	
+		// Quick view pop up JS
+		$('#yourModalId').modality( {
+			clickoff: false,
+			 effect: 'slide-up'
+		} );
+		
+		// About box JS
+		$('#about-pop').modality( {
+		clickoff: false,
+		 effect: 'slide-down'
+		} );
+		
+		// Gat shave box JS
+		$('#get_shave-box').modality( {
+		clickoff: false,
+		 effect: 'slide-down'
+		} );
+		
+		// Contact box JS
+		$('#contact').modality( {
+		clickoff: false,
+		 effect: 'slide-down'
+		} );
+		
+		// About inner JS
+		$('#home-slider').bxSlider({
+		  mode: 'horizontal',
+		  controls: true,
+		  pager: false,
+		  speed:800,
+		  auto:false
+		});
+		
+		//  Menu JS
+		$('#cbp-spmenu-s1 ul li a').on('click', function(){
+			$(this).addClass("active").parent().siblings().children('.active').removeClass('active');
+		});
+		
+		$('.close-Modality').on('click', function(){
+			$(".about-menu").removeClass('active');
+			$(".getShave-menu").removeClass('active');
+			$(".contact-menu").removeClass('active');
+			$(".home-menu").addClass('active');
+		});
+		$(".about-menu").on('click', function(){
+			//$("#about-pop").parent('.modality-outer').attr("aria-hidden", "false");
+//			$("#get_shave-box").parent('.modality-outer').attr("aria-hidden", "true");
+//			$("#contact").parent('.modality-outer').attr("aria-hidden", "true");
+		});
+		
+	
+	});
+	
+	function oneAt(menu, contain, other){
+		// menu click
+		$(".about-menu").on('click', function(){
+		
+		});
+		// same container open
+		// others close
+		
+	};
+	
+</script>
+</div>
+</body>
+</html>
